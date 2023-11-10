@@ -20,8 +20,7 @@ public class LargestNumber {
         Collections.sort(arrayNum);
 
         System.out.println((arrayNum.get(0) == arrayNum.get(1) &&
-                arrayNum.get(1) == arrayNum.get(2) &&
-                arrayNum.get(0) == arrayNum.get(2))
+                arrayNum.get(1) == arrayNum.get(2))
                         ? "All numbers are equal."
                         : "The biggest number is " + arrayNum.get(2));
     }
