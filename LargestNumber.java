@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LargestNumber {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> arrayNum = new ArrayList<>(3);
+        ArrayList<Integer> arrayNum = new ArrayList<>();
 
         for (int i = 1; i <= 3; i++) {
             System.out.print("Please enter INPUT" + i + " : ");
