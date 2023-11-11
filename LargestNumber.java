@@ -5,17 +5,12 @@ import java.util.Scanner;
 public class LargestNumber {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> arrayNum = new ArrayList<>();
+        ArrayList<Integer> arrayNum = new ArrayList<>(3);
 
-        System.out.print("Please enter the first number: ");
-        arrayNum.add(scan.nextInt());
-
-        System.out.print("Please enter the second number: ");
-        arrayNum.add(scan.nextInt());
-
-        System.out.print("Please enter the third number: ");
-        arrayNum.add(scan.nextInt());
-        scan.close();
+        for (int i = 1; i <= 3; i++) {
+            System.out.print("Please enter INPUT" + i + " : ");
+            arrayNum.add(scan.nextInt());
+        }
 
         Collections.sort(arrayNum);
 
